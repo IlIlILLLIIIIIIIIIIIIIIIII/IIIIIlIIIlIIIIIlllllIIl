@@ -214,15 +214,7 @@ MainSection:NewButton("Buy", "Free NFT", function()
     Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
 "Box Toy Harambe"
 end)
-MainSection:NewToggle("F Spam", "Spam Buy F", function(state)
-Game.ReplicatedStorage.RemoveEvents.BuyItemCash:Fireserver
-"F"
-    if state then
-        print("Toggle On")
-    else
-        print("Toggle Off")
-    end
-end)
+
 
 
 
