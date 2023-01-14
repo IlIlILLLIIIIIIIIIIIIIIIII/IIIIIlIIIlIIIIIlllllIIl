@@ -1,0 +1,15 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Hell Hub", "Ocean")
+
+-- MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main - hell. #0004")
+MainSection:NewButton("Rainbow Hand", "Gives Rainbow Hand for 1m", function()
+    Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
+"Hand Rainbow"
+end)
+
+-- Dupe
+    
+
+
