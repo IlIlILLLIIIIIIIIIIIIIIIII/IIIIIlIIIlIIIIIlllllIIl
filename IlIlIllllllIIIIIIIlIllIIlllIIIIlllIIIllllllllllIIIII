@@ -17,6 +17,11 @@ MainSection:NewButton("Harambe", "Free NFT", function()
 "Box Toy Harambe"
 end)
 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+MainSection:NewButton("Infinite Yield", "Admin", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
     
 
 
