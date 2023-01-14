@@ -8,12 +8,11 @@ MainSection:NewButton("Rainbow Hand", "Gives Rainbow Hand for 1m", function()
     Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
 "Hand Rainbow"
 end)
-local F = Window:NewTab("F")
-local FSection = F:NewSection("Buy Offsales/NFT")
 MainSection:NewButton("F", "Gives F", function()
-Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
+    Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
 "F"
 end)
+
     
 
 
