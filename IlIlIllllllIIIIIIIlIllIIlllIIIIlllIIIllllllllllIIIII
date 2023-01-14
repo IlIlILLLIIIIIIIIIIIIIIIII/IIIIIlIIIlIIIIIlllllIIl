@@ -8,8 +8,12 @@ MainSection:NewButton("Rainbow Hand", "Gives Rainbow Hand for 1m", function()
     Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
 "Hand Rainbow"
 end)
-
--- Dupe
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main - hell. #0004")
+MainSection:NewButton("Rainbow Hand", "Gives Rainbow Hand for 1m", function()
+Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
+"F"
+end)
     
 
 
