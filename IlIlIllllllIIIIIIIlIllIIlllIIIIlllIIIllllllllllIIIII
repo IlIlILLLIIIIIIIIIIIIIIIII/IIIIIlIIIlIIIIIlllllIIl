@@ -210,10 +210,14 @@ MainSection:NewButton("Harambe", "Free NFT", function()
     Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
 "Box Toy Harambe"
 end)
-MainSection:NewButton("Buy", "Free NFT", function()
-    Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
-"Box Toy Harambe"
-end)
+MainSection:NewButton("Dupe", "dupes (piano needed)", function()
+while wait() 
+ do 
+Game.ReplicatedStorage.RemoteEvents.Equip:FireServer
+"Piano"
+    anything = true 
+  end
+  end)
 
 
 
