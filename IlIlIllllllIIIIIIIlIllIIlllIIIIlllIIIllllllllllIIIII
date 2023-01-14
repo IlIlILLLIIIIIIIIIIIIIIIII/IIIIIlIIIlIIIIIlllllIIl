@@ -210,10 +210,19 @@ MainSection:NewButton("Harambe", "Free NFT", function()
     Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
 "Box Toy Harambe"
 end)
--- Player
-local Player = Window:NewTab("Player")
-local PlayerSection = Player:NewSection("Player")
-Player:NewButton("Fly", "makes u fly", function()
+MainSection:NewButton("Buy", "Free NFT", function()
+    Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
+"Box Toy Harambe"
+end)
+MainSection:NewToggle("Angel Eye", "Spam Buy Angel Eye", function(state)
+Game.ReplicatedStorage.RemoveEvents.BuyItemCash:Fireserver
+"Angel Eye"
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
 
 
 
