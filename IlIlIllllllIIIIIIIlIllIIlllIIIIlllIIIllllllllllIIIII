@@ -9,8 +9,8 @@ MainSection:NewButton("Rainbow Hand", "Gives Rainbow Hand for 1m", function()
 "Hand Rainbow"
 end)
 local Main = Window:NewTab("Main")
-local MainSection = Main:NewSection("Main - hell. #0004")
-MainSection:NewButton("Rainbow Hand", "Gives Rainbow Hand for 1m", function()
+local MainSection = Main:NewSection("Buy Offsales/NFT")
+MainSection:NewButton("F", "Gives F", function()
 Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
 "F"
 end)
