@@ -72,6 +72,17 @@ end
         getgenv().l = false
     end
 end)
+local Dupe = Window:NewTab("Dupe")
+local DupeSection = Dupe:NewSection("Dupe")
+DupeSection:NewButton("Dupe", "dupes (piano needed)", function()
+while wait() 
+ do 
+Game.ReplicatedStorage.RemoteEvents.Equip:FireServer
+"Piano"
+    anything = true 
+  end
+  end)
+
 local FakeDrop = Window:NewTab("FakeDrop")
 local FakeDropSection = FakeDrop:NewSection("FakeDrop")
 FakeDropSection:NewButton("Fake Drops Item", "USE reset after scam", function()
@@ -92,6 +103,8 @@ local Credits = Window:NewTab("Credits")
 local Credits = Credits:NewSection("Snakez#2695")
 local Updates = Window:NewTab("Updates")
 local Updates = Updates:NewSection("FakeDrop")
+
+
 
 
 
