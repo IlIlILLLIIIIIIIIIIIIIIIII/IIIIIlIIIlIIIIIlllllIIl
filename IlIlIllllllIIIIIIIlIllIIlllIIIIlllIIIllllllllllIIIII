@@ -72,4 +72,20 @@ end
         getgenv().l = false
     end
 end)
+local FakeDrop = Window:NewTab("FakeDrop")
+local FakeDropSection = FakeDrop:NewSection("FakeDrop")
+FakeDropSection:NewButton("Fake Drops Item", "USE reset after scam", function()
+local plr = game.Players.LocalPlayer
+
+local chr = plr.Character
+
+chr.RightHand:Destroy()
+end)
+FakeDropSection:NewButton("Reset", "This is obvious what this does", function()
+local plr = game.Players.LocalPlayer
+
+local chr = plr.Character
+
+chr.Head:Destroy()
+
 
