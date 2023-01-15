@@ -1,5 +1,5 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Hell Hub | v1.3.6.3", "Ocean")
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Hell Hub | v1.1.6.3", "Ocean")
 
 -- MAIN
 local Main = Window:NewTab("Main")
@@ -88,5 +88,10 @@ local chr = plr.Character
 
 chr.Head:Destroy()
 end)
+local Credits = Window:NewTab("Credits")
+local Credits = Credits:NewSection("Snakez#2695")
+local Updates = Window:NewTab("Updates")
+local Updates = Updates:NewSection("FakeDrop")
+
 
 
