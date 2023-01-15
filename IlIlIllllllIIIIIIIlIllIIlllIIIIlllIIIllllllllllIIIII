@@ -76,6 +76,10 @@ Game.ReplicatedStorage.RemoteEvents.Equip:FireServer
     anything = true 
   end
   end)
+  DupeSection:NewButton("SafePlace", "TP's to safe place.", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(41.3862267, 61.8797607, -304.975037, -0.999932826, -1.85789284e-09, -0.0115917446, -1.92988336e-09, 1, 6.19931972e-09, 0.0115917446, 6.22127416e-09, -0.999932826)
+  end
+  end)
 
 local FakeDrop = Window:NewTab("FakeDrop")
 local FakeDropSection = FakeDrop:NewSection("FakeDrop")
