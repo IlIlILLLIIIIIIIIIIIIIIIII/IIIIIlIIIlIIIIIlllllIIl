@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Hell Hub | v1.1.6.3", "Ocean")
+local Window = Library.CreateLib("iHell - v1.12", "Ocean")
 
 -- MAIN
 local Main = Window:NewTab("Main")
@@ -8,26 +8,53 @@ MainSection:NewButton("Rainbow Hand", "Gives Rainbow Hand for 1m", function()
     Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
 "Hand Rainbow"
 end)
+
+
+MainSection:NewButton("Harambe", "Free NFT", function()
+    Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
+"Box Toy Harambe"
+end)
+MainSection:NewButton("Dart", "Free NFT", function()
+    Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
+"Dart"
+end)
 MainSection:NewButton("F", "Gives F", function()
     Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
 "F"
 end)
-MainSection:NewButton("Harambe", "Free NFT", function()
+MainSection:NewButton("A", "Gives A", function()
     Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
-"Box Toy Harambe"
+"A"
+end)
+MainSection:NewButton("B", "Gives B", function()
+    Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
+"B"
+end)
+MainSection:NewButton("C", "Gives C", function()
+    Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
+"C"
+end)
+MainSection:NewButton("D", "Gives D", function()
+    Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
+"D"
+end)
+MainSection:NewButton("E", "Gives E", function()
+    Game.ReplicatedStorage.RemoteEvents.BuyItemCash:FireServer
+"E"
 end)
   
  
 
 local AutoBuy = Window:NewTab("AutoBuy")
 local AutoBuySection = AutoBuy:NewSection("AutoBuy")
-AutoBuySection:NewToggle("Auto Buy F", "inf buys F", function(state)
+
+AutoBuySection:NewToggle("Auto Buy RB Hand", "inf buys RB Hand", function(state)
     if state then
         getgenv().l = true
 while getgenv().l do
 wait(1)
 local args = {
-    [1] = "F"
+    [1] = "Hand Rainbow"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
@@ -36,13 +63,13 @@ end
         getgenv().l = false
     end
 end)
-AutoBuySection:NewToggle("Auto Buy RB Hand", "inf buys RB Hand", function(state)
+AutoBuySection:NewToggle("Auto Buy Dart", "inf buys Dart", function(state)
     if state then
         getgenv().l = true
 while getgenv().l do
 wait(1)
 local args = {
-    [1] = "Hand Rainbow"
+    [1] = "Dart"
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
@@ -66,6 +93,98 @@ end
         getgenv().l = false
     end
 end)
+AutoBuySection:NewToggle("Auto Buy F", "inf buys F", function(state)
+    if state then
+        getgenv().l = true
+while getgenv().l do
+wait(1)
+local args = {
+    [1] = "F"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+    else
+        getgenv().l = false
+    end
+end)
+AutoBuySection:NewToggle("Auto Buy A", "inf buys A", function(state)
+    if state then
+        getgenv().l = true
+while getgenv().l do
+wait(1)
+local args = {
+    [1] = "A"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+    else
+        getgenv().l = false
+    end
+end)
+AutoBuySection:NewToggle("Auto Buy B", "inf buys B", function(state)
+    if state then
+        getgenv().l = true
+while getgenv().l do
+wait(1)
+local args = {
+    [1] = "B"
+
+}
+   game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+    else
+        getgenv().l = false
+    end
+end)
+AutoBuySection:NewToggle("Auto Buy C", "inf buys C", function(state)
+    if state then
+        getgenv().l = true
+while getgenv().l do
+wait(1)
+local args = {
+    [1] = "C"
+ 
+}
+   game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+    else
+        getgenv().l = false
+    end
+end)
+AutoBuySection:NewToggle("Auto Buy D", "inf buys D", function(state)
+    if state then
+        getgenv().l = true
+while getgenv().l do
+wait(1)
+local args = {
+    [1] = "D"
+ 
+}
+   game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+    else
+        getgenv().l = false
+    end
+end)
+AutoBuySection:NewToggle("Auto Buy E", "inf buys E", function(state)
+    if state then
+        getgenv().l = true
+while getgenv().l do
+wait(1)
+local args = {
+    [1] = "E"
+
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+    else
+        getgenv().l = false
+    end
+end)
+
 local Dupe = Window:NewTab("Dupe")
 local DupeSection = Dupe:NewSection("Dupe")
 DupeSection:NewButton("Dupe", "dupes (piano needed)", function()
@@ -76,7 +195,86 @@ Game.ReplicatedStorage.RemoteEvents.Equip:FireServer
     anything = true 
   end
   end)
-  DupeSection:NewButton("SafePlace", "TP's to safe place.", function()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local AFK = Window:NewTab("AFK")
+local AFKSection = AFK:NewSection("AFK")
+AFKSection:NewButton("Anti Idle", "Makes U not get kicked", function()
+wait(0.5)local ba=Instance.new("ScreenGui")
+local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,370,0,52)
+ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti AFK Script"ca.TextColor3=Color3.new(0,1,1)
+ca.TextSize=22;da.Parent=ca
+da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+da.Size=UDim2.new(0,370,0,107)_b.Parent=da
+_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="driver scripts "
+_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
+ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
+ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+bb:CaptureController()bb:ClickButton2(Vector2.new())
+ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status : Active"
+
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DupeSection:NewButton("BabyNoob Dupe", "Coming Soon!"
+  )DupeSection:NewButton("SafePlace", "TP's to safe place.", function()
   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(41.3862267, 61.8797607, -304.975037, -0.999932826, -1.85789284e-09, -0.0115917446, -1.92988336e-09, 1, 6.19931972e-09, 0.0115917446, 6.22127416e-09, -0.999932826)
   end)
   
@@ -85,7 +283,7 @@ local PlayerSection = Player:NewSection("Player")
 PlayerSection:NewToggle("Super-Human", "120 spd 120 jump", function(state)
 if state then
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 300
 else
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
@@ -109,11 +307,7 @@ local chr = plr.Character
 chr.Head:Destroy()
 end)
 local Credits = Window:NewTab("Credits")
-local Credits = Credits:NewSection("Snakez#2695")
-local Updates = Window:NewTab("Updates")
-local Updates = Updates:NewSection("FakeDrop")
-
-
-
-
-
+local Credits = Credits:NewSection("hell.#0004")
+local Updates = Window:NewTab("Discord")
+local Updates = Updates:NewSection("discord.gg/s8ejX4MeSS")
+end)
